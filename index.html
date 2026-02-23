@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Willow Ops Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Willow Operations Dashboard</h1>
+    <p>Meetings & deadlines by focus area</p>
+    <div id="updated"></div>
+  </header>
+
+  <main id="sections">
+    <section id="actions">
+      <h2>Action Items</h2>
+      <div class="cards" data-section="Action Items"></div>
+    </section>
+    <section id="unit-reviews">
+      <h2>Unit Reviews</h2>
+      <div class="cards" data-section="Unit Reviews"></div>
+    </section>
+    <section id="rhecs">
+      <h2>RHECs</h2>
+      <div class="cards" data-section="RHECs"></div>
+    </section>
+    <section id="pcc">
+      <h2>PCC</h2>
+      <div class="cards" data-section="PCC"></div>
+    </section>
+    <section id="exst">
+      <h2>EXST</h2>
+      <div class="cards" data-section="EXST"></div>
+    </section>
+    <section id="msche">
+      <h2>MSCHE</h2>
+      <div class="cards" data-section="MSCHE"></div>
+    </section>
+    <section id="apac">
+      <h2>APAC</h2>
+      <div class="cards" data-section="APAC"></div>
+    </section>
+    <section id="reporting">
+      <h2>Reporting</h2>
+      <div class="cards" data-section="Reporting"></div>
+    </section>
+  </main>
+
+  <template id="event-card">
+    <article class="card">
+      <div class="card-header">
+        <span class="badge"></span>
+        <h3></h3>
+      </div>
+      <p class="time"></p>
+      <p class="location"></p>
+    </article>
+  </template>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
